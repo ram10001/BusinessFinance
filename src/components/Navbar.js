@@ -12,60 +12,57 @@ function Navbar() {
                    logo
                </NavLink>
 
-               <ul>
-                   <li>
-                   <NavLink to="/" className ="navlogo">
-                   logo
-                   </NavLink>
-                   </li>
+               <ul className="nav-menu">
+                   
 
-                   <li>
-                   <NavLink to="/" className ="home">
+                   <li className="nav-items">
+                   <NavLink to="/" className ="nav-links">
                    Home
                    </NavLink>
                    </li>
 
-                   <li>
-                   <NavLink to="/" className ="purchase">
+                   <li className="nav-items">
+                   <NavLink to="/purchase" className ="nav-links">
                    Purchase
                    </NavLink>
                    </li>
 
-                   <li>
-                   <NavLink to="/" className ="inventory">
-                   Inventory
-                   </NavLink>
-                   </li>
 
-                   <li>
-                   <NavLink to="/" className ="sales">
-                   Sales
-                   </NavLink>
-                   </li>
-
-                   <li>
-                   <NavLink to="/" className ="workfores">
+                   <li className="nav-items">
+                   <NavLink to="/workfores" className ="nav-links">
                    Workfores
                    </NavLink>
                    </li>
 
-                   <li>
-                   <NavLink to="/" className ="login">
-                   Login
-                   </NavLink>
-                   </li>
-
-                   <li>
-                   <NavLink to="/" className ="signup">
-                   Start Now
-                   </NavLink>
-                   </li>
-
-                   <li>
-                   <NavLink to="/" className ="navlogo">
+                   <li className="nav-items">
+                   <NavLink to="/inventory" className ="nav-links">
                    Inventory
                    </NavLink>
                    </li>
+
+                   <li className="nav-items">
+                   <NavLink to="/sales" className ="nav-links">
+                   Sales
+                   </NavLink>
+                   </li>
+
+                   
+
+                        <li className="nav-items" >
+                        <NavLink to="/login" className ="nav-links">
+                        Login
+                        </NavLink>
+                        </li>
+
+                        <li  className="nav-items">
+                        <NavLink to="/signup" className ="nav-links">
+                        Start Now
+                        </NavLink>
+                        </li>
+
+                   
+
+                   
 
                    
                </ul>

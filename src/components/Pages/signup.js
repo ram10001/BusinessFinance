@@ -1,4 +1,4 @@
- import React from 'react'
+ import React from 'react';
  
  export const signup = () => {
      return (
@@ -6,5 +6,5 @@
              <h1>sign up form</h1>
          </div>
      )
- }
+ };
  

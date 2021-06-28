@@ -1,0 +1,47 @@
+.navbar {
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+.nav-cont{
+
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    width: 100%;
+    height: 80px;
+    max-width: 1500px;
+}
+
+.navlogo{
+    color: aquamarine;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 40px;
+    flex-grow: 1;
+
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    text-align : center;
+    margin-right: 20px
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 3px solid transparent;
+}
+
+ 

@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink  } from "react-router-dom";
 import "./workfores-nav.css";
 
- function workfNav() {
+ function WorkfNav() {
     return (
         <div>
             <nav className="wfnav">
@@ -25,4 +25,4 @@ import "./workfores-nav.css";
     )
 }
 
-export default workfNav;
+export default WorkfNav;

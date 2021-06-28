@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.wfnav{
+   font-size: 20px;
+   background-color: black;
+   position: sticky;
+   display: flex;
+   height: 60px;
+   justify-content: center;
+   align-items: center;
+}
+
+.wfmenu{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.wfn-link{
+     margin: 100px ;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.wfn-link:hover{
+    color: black;
+    background-color: aqua;
+    border: none;
+    font-weight: bold;
+}
