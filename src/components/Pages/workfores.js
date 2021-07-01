@@ -4,7 +4,11 @@ import {
   } from "react-router-dom";
 import WorkfNav from './workfores-comp/workfores-nav';
 import { attendance } from './workfores-comp/attendance';
-import { workers } from './workfores-comp/workers';
+import { Workers } from './workfores-comp/workers';
+import { AddUser } from './workfores-comp/AddUser';
+import { EditUser } from './workfores-comp/Edituser';
+
+
 
 export const workfores = () => {
     return (
@@ -16,11 +20,14 @@ export const workfores = () => {
                     <div className="wfpages">
 
                         <Switch>
-                            <Route path="/workers" component={workers}/>
+                            <Route path="/workers" component={Workers}/>
 
                             <Route path="/attendance" component={attendance}/>
 
-                            
+                            <Route path="/adduser" component={AddUser}/>
+
+                            <Route path="/edituser/:id" component={EditUser}/>
+
                         </Switch>
 
                 </div>

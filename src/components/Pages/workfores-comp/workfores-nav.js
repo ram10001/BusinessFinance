@@ -19,6 +19,12 @@ import "./workfores-nav.css";
                         </NavLink>
                     </li>
 
+                    <li>
+                        <NavLink to="/adduser"  className="wfn-link">
+                            Add User
+                        </NavLink>
+                    </li>
+
                 </ul>
             </nav>
         </div>

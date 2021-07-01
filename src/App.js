@@ -6,6 +6,9 @@ import {
   BrowserRouter as Router , Switch , Route
 } from "react-router-dom";
 
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+
+
 import { inventory } from './components/Pages/inventory';
 import { purchase } from './components/Pages/purchase';
 import { Sales } from './components/Pages/sale';
