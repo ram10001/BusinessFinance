@@ -10,7 +10,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 
 
-import { purchase } from './components/Pages/purchase';
+
 import { Sales } from './components/Pages/sale';
 import { workfores } from './components/Pages/workfores';
 import { signup } from './components/Pages/signup';
@@ -19,6 +19,9 @@ import { home } from './components/Pages/home';
 import { Inventory } from './components/Pages/inventory';
 import { Editinven } from './components/Pages/editcComp/editinven';
 import { Addinven } from './components/Pages/addComp/addinven';
+import { Purchase } from './components/Pages/purchase';
+import { Addrawm } from './components/Pages/addComp/addpur';
+import { Editrawm } from './components/Pages/editcComp/editpur';
 
 
 function App() {
@@ -34,7 +37,7 @@ function App() {
 
             <Route exact path="/inventory" component={Inventory}/>
 
-            <Route exact path="/purchase" component={purchase}/>
+            <Route exact path="/purchase" component={Purchase}/>
             
             <Route  path="/sales" component={Sales}/>
             
@@ -48,7 +51,9 @@ function App() {
 
             <Route  path="/editinven/:id" component={Editinven}/>
 
+            <Route  path="/addrawm" component={Addrawm}/>
 
+            <Route  path="/editraw/:id" component={Editrawm}/>
           
           </Switch>
           </div>

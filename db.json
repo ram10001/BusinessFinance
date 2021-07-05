@@ -289,5 +289,39 @@
       "quant": "52121",
       "id": 6
     }
+  ],
+  "rawm": [
+    {
+      "id": 1,
+      "item": "tool 1",
+      "lod": "10-12-10",
+      "cost": 10,
+      "amount": 2000,
+      "ramount": 1000
+    },
+    {
+      "id": 2,
+      "item": "tool 2",
+      "lod": "10-12-10",
+      "cost": 10,
+      "amount": 2000,
+      "ramount": 5000
+    },
+    {
+      "id": 3,
+      "item": "tool 3",
+      "lod": "10-12-10",
+      "cost": 20,
+      "amount": 8000,
+      "ramount": 6000
+    },
+    {
+      "item": "screw you",
+      "lod": "5152",
+      "cost": "5145",
+      "amount": "54151",
+      "ramount": "00",
+      "id": 4
+    }
   ]
 }
