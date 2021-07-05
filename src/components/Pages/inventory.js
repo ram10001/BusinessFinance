@@ -22,6 +22,13 @@ export const Inventory = () => {
         <div>
             <h1>your stocke</h1>
 
+            <div className="d-grid gap-2">
+
+            <Link className="btn btn-primary btn-lg" to="/addinven">
+               Add items
+            </Link>
+            </div>
+
             
 
             <Table striped responsive bordered hover size="sm" >

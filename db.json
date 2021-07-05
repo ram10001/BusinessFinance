@@ -283,6 +283,11 @@
       "item": "screw you",
       "quant": "1000",
       "undefined": "tool "
+    },
+    {
+      "item": "rhgs",
+      "quant": "52121",
+      "id": 6
     }
   ]
 }

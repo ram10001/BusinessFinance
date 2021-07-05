@@ -18,6 +18,7 @@ import { login } from './components/Pages/login';
 import { home } from './components/Pages/home';
 import { Inventory } from './components/Pages/inventory';
 import { Editinven } from './components/Pages/editcComp/editinven';
+import { Addinven } from './components/Pages/addComp/addinven';
 
 
 function App() {
@@ -42,6 +43,8 @@ function App() {
             <Route  path="/signup" component={signup}/>
             
             <Route  path="/login" component={login}/>
+
+            <Route  path="/addinven" component={Addinven}/>
 
             <Route  path="/editinven/:id" component={Editinven}/>
 
