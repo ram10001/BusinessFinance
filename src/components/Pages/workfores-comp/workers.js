@@ -18,6 +18,11 @@ export const Workers = () => {
         setUser(result.data.reverse());
     };
 
+    const deleteUser = async id => {
+       await axios.delete(`http://localhost:3003/users/${id}`);
+       lodeUsers();
+    }
+
     return (
         <div>
             <h1>manege workers</h1>
@@ -45,9 +50,9 @@ export const Workers = () => {
                             <td>{user.name}</td>
                             <td>{user.amount}</td>
                             <td>
-                                <Link class="btn btn-primary mr-2">view</Link>
+                                <Link class="btn btn-primary mr-2" to={`/viewuser/${user.id}`}>view</Link>
                                 <Link class="btn btn-outline-primary mr-2" to={`/edituser/${user.id}`} >edit</Link>
-                                <Link class="btn btn-danger">Delete</Link>
+                                <Link class="btn btn-danger" onClick={()=>deleteUser(user.id)}>Delete</Link>
                             </td>
 
                         </tr>

@@ -9,13 +9,15 @@ import {
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 
-import { inventory } from './components/Pages/inventory';
+
 import { purchase } from './components/Pages/purchase';
 import { Sales } from './components/Pages/sale';
 import { workfores } from './components/Pages/workfores';
 import { signup } from './components/Pages/signup';
 import { login } from './components/Pages/login';
 import { home } from './components/Pages/home';
+import { Inventory } from './components/Pages/inventory';
+import { Editinven } from './components/Pages/editcComp/editinven';
 
 
 function App() {
@@ -29,7 +31,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={home}/>
 
-            <Route exact path="/inventory" component={inventory}/>
+            <Route exact path="/inventory" component={Inventory}/>
 
             <Route exact path="/purchase" component={purchase}/>
             
@@ -40,6 +42,10 @@ function App() {
             <Route  path="/signup" component={signup}/>
             
             <Route  path="/login" component={login}/>
+
+            <Route  path="/editinven/:id" component={Editinven}/>
+
+
           
           </Switch>
           </div>

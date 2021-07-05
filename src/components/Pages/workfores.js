@@ -7,6 +7,8 @@ import { attendance } from './workfores-comp/attendance';
 import { Workers } from './workfores-comp/workers';
 import { AddUser } from './workfores-comp/AddUser';
 import { EditUser } from './workfores-comp/Edituser';
+import { ViewUser } from './workfores-comp/ViewUser';
+
 
 
 
@@ -27,6 +29,9 @@ export const workfores = () => {
                             <Route path="/adduser" component={AddUser}/>
 
                             <Route path="/edituser/:id" component={EditUser}/>
+
+                            <Route path="/viewuser/:id" component={ViewUser}/>
+
 
                         </Switch>
 
