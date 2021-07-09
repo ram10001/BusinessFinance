@@ -22,6 +22,9 @@ import { Addinven } from './components/Pages/addComp/addinven';
 import { Purchase } from './components/Pages/purchase';
 import { Addrawm } from './components/Pages/addComp/addpur';
 import { Editrawm } from './components/Pages/editcComp/editpur';
+import { Addsaler } from './components/Pages/salersComp/addsaler';
+import { SalerHist } from './components/Pages/salersComp/salerHist';
+import { Addtran } from './components/Pages/salersComp/addtran';
 
 
 function App() {
@@ -54,6 +57,12 @@ function App() {
             <Route  path="/addrawm" component={Addrawm}/>
 
             <Route  path="/editraw/:id" component={Editrawm}/>
+
+            <Route  path="/addsaler" component={Addsaler}/>
+
+            <Route  path="/salerHist/:id" component={SalerHist}/>
+
+            <Route  path="/addtran/:id" component={Addtran}/>
           
           </Switch>
           </div>

@@ -323,5 +323,171 @@
       "ramount": "00",
       "id": 4
     }
+  ],
+  "saler": [
+    {
+      "id": 1,
+      "name": "ram",
+      "amount": "10000",
+      "tran": [
+        {
+          "id": 1,
+          "date": "10.20.64",
+          "credit": 1000,
+          "debit": 41310,
+          "bill": 12000
+        },
+        {
+          "id": 2,
+          "date": "10.20.64",
+          "credit": 1000,
+          "debit": 41310,
+          "bill": 12000
+        },
+        {
+          "id": 3,
+          "date": "10.20.64",
+          "credit": 1000,
+          "debit": 41310,
+          "bill": 12000
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "ram2",
+      "amount": "10000",
+      "tran": [
+        {
+          "id": 1,
+          "date": "10.20.64",
+          "credit": 1000,
+          "debit": 41310,
+          "bill": 12000
+        },
+        {
+          "id": 2,
+          "date": "10.20.64",
+          "credit": 1000,
+          "debit": 41310,
+          "bill": 12000
+        },
+        {
+          "id": 3,
+          "date": "10.20.64",
+          "credit": 1000,
+          "debit": 41310,
+          "bill": 12000
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "ram3",
+      "amount": "10000",
+      "tran": [
+        {
+          "id": 1,
+          "date": "10.20.64",
+          "credit": 1000,
+          "debit": 41310,
+          "bill": 12000
+        },
+        {
+          "id": 2,
+          "date": "10.20.64",
+          "credit": 1000,
+          "debit": 41310,
+          "bill": 12000
+        },
+        {
+          "id": 3,
+          "date": "10.20.64",
+          "credit": 1000,
+          "debit": 41310,
+          "bill": 12000
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "ram4",
+      "amount": "10000",
+      "tran": [
+        {
+          "id": 1,
+          "date": "10.20.64",
+          "credit": 1000,
+          "debit": 41310,
+          "bill": 12000
+        },
+        {
+          "id": 2,
+          "date": "10.20.64",
+          "credit": 1000,
+          "debit": 41310,
+          "bill": 12000
+        },
+        {
+          "id": 3,
+          "date": "10.20.64",
+          "credit": 1000,
+          "debit": 41310,
+          "bill": 12000
+        }
+      ]
+    },
+    {
+      "name": "mahaishi chutiya hai",
+      "amount": "10000",
+      "tran": [
+        {
+          "date": "today",
+          "credit": 0,
+          "debit": 0,
+          "bill": 0
+        }
+      ],
+      "id": 8
+    },
+    {
+      "name": "vsgvgxj",
+      "amount": "165165",
+      "tran": [
+        {
+          "date": "today",
+          "credit": 0,
+          "debit": 0,
+          "bill": 0
+        }
+      ],
+      "id": 9
+    },
+    {
+      "name": "sdasf",
+      "amount": "5655",
+      "tran": [
+        {
+          "date": "today",
+          "credit": 0,
+          "debit": 0,
+          "bill": 0
+        }
+      ],
+      "id": 10
+    },
+    {
+      "name": "efefg",
+      "amount": "54654",
+      "tran": [
+        {
+          "date": "today",
+          "credit": 0,
+          "debit": 0,
+          "bill": 0
+        }
+      ],
+      "id": 11
+    }
   ]
 }

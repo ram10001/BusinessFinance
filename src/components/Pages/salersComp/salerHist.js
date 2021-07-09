@@ -10,18 +10,17 @@ import { Link, useParams } from 'react-router-dom';
 export const SalerHist = () => {
 
     const [saler, setsaler] = useState({
-        "name": "",
-        "amount": "",
-        "tran": [
+        name: "",
+        amount: "",
+        tran: [
             {
-                "date": "today",
-                "credit": 0,
-                "debit": 0,
-                "bill": 0
+                date: "today",
+                credit : 0,
+                debit : 0,
+                bill : 0
             }
         ]
-    });
-
+      });
 
     const { id } = useParams();
 
@@ -47,7 +46,7 @@ export const SalerHist = () => {
 
             <div className="d-grid gap-2">
 
-                <Link className="btn btn-primary btn-lg" to="/addinven">
+                <Link className="btn btn-primary btn-lg" to={`/addtran/${id}`}>
                     Add Transection
                 </Link>
             </div>

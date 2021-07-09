@@ -11,24 +11,33 @@ export const Addsaler = () => {
     const [saler, setsaler] = useState({
         name: "",
         amount: "",
-        tran:""
+        tran: [
+            {
+                date: "today",
+                credit : 0,
+                debit : 0,
+                bill : 0
+            }
+        ]
       });
+
+    
 
       const { name, amount } = saler;
 
       const onInputChange = e =>{
           setsaler ({...saler,[e.target.name]:e.target.value});
+
       };
 
     
       const onSubmit = async e  =>{
           e.preventDefault();
           await axios.post(`http://localhost:3003/saler`,saler);
+
           history.push("/sales" );
+          
       };
-
-  
-
 
     return (
         <div>
@@ -63,7 +72,7 @@ export const Addsaler = () => {
                         </div>
 
 
-                        <button className="btn btn-primary btn-block">Add item</button>
+                        <button className="btn btn-primary btn-block">Add saler</button>
                     </form>
                 </div>
             </div>
