@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 export const Workers = () => {
+
     const [users, setUser] = useState([]);
 
     useEffect(() =>{
@@ -13,16 +14,12 @@ export const Workers = () => {
     },[]);
 
     const lodeUsers = async () => {
-        console.log("IS THIS IT");
-        const result = await axios.get("/showWorker");
-        console.log("Result");
-        console.log(result);
+        const result = await axios.get("http://localhost:3003/users");
         setUser(result.data.reverse());
     };
 
-    const deleteUser = async _id => {
-       await axios.delete(`/deleteWorker/${_id}`);
-       console.log("DELETED");
+    const deleteUser = async id => {
+       await axios.delete(`http://localhost:3003/users/${id}`);
        lodeUsers();
     }
 
@@ -48,14 +45,14 @@ export const Workers = () => {
                 </thead>
                 <tbody>
                     {users.map((user, index) => (
-                        <tr key={user._id}>
+                        <tr>
                             <th scope="row">{index + 1}</th>
                             <td>{user.name}</td>
                             <td>{user.amount}</td>
                             <td>
-                                <Link className="btn btn-primary mr-2" to={`/viewuser/${user._id}`}>view</Link>
-                                <Link className="btn btn-outline-primary mr-2" to={`/edituser/${user._id}`} >edit</Link>
-                                <Link className="btn btn-danger" to="/#" onClick={()=>deleteUser(user._id)}>Delete</Link>
+                                <Link class="btn btn-primary mr-2" to={`/viewuser/${user.id}`}>view</Link>
+                                <Link class="btn btn-outline-primary mr-2" to={`/edituser/${user.id}`} >edit</Link>
+                                <Link class="btn btn-danger" onClick={()=>deleteUser(user.id)}>Delete</Link>
                             </td>
 
                         </tr>

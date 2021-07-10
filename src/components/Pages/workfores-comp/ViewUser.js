@@ -17,7 +17,7 @@ export const ViewUser = () => {
   }, []);
 
   const loadUser = async () => {
-    const result = await axios.get(`/viewWorker/${id}`);
+    const result = await axios.get(`http://localhost:3003/users/${id}`);
     setUser(result.data);
   };
   

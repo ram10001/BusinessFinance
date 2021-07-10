@@ -10,6 +10,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 
 
+
 import { Sales } from './components/Pages/sale';
 import { workfores } from './components/Pages/workfores';
 import { signup } from './components/Pages/signup';
