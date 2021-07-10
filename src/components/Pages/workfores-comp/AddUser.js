@@ -19,8 +19,17 @@ export const AddUser = () => {
     };
 
     const onSubmit = async e => {
+        console.log("ADDD USER PAGE RAN");
         e.preventDefault();
-        await axios.post("http://localhost:3003/users", user);
+        await axios.post("/addWorker", user);
+    //     axios.post("/addWorker",JSON.stringify(user))
+    //     .then(response =>{
+    //         console.log(response)
+    //     })
+    //     .catch(error =>{
+    //         console.log(error.response)
+    //     })
+    //     console.log(JSON.stringify(user))
         history.push("/workers");
     };
 

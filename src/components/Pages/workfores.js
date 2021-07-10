@@ -37,7 +37,6 @@ export const workfores = () => {
 
                 </div>
 
-
             </Router>
         </div>
     )
