@@ -25,15 +25,13 @@ export const EditUser = () => {
       }, []);
 
       const onSubmit = async e  =>{
-          console.log("REACT PUT REQUEST");
           e.preventDefault();
-          await axios.put(`/editWorker/${id}`,user);
+          await axios.put(`http://localhost:3003/users/${id}`,user);
           history.push("/workers");
       };
 
       const loadUser = async () => {
-          console.log("Yoooooooooooooooooooooooooooooooooooooooo");
-          const result =await axios.get(`/viewWorker/${id}`);
+          const result =await axios.get(`http://localhost:3003/users/${id}`);
           setUser(result.data);
       }
 
